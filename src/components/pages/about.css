@@ -1,0 +1,131 @@
+body {
+  overflow: hidden;
+}
+
+.name {
+  text-align: center;
+  /*   margin-top:140px; */
+  font-size: 37px;
+  position: relative;
+  font-family: "Exo", sans-serif;
+  color: #000;
+  left: -25%;
+}
+
+.cristalBall {
+  width: 100%;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99999;
+}
+
+.background {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.circle {
+  background-color: #fffdff;
+  height: 1300px;
+  border-radius: 50%;
+  width: 1300px;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+}
+
+.circle1 {
+  background-color: #fcefff;
+  height: 1000px;
+  border-radius: 50%;
+  width: 1000px;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: pulse3 10s linear infinite;
+}
+
+.circle2 {
+  background-color: #f3cafc;
+  height: 700px;
+  border-radius: 50%;
+  width: 700px;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  font-size: 40px;
+  transform: translate(-50%, -50%);
+  animation: pulse 4s linear infinite;
+}
+
+.circle3 {
+  background-color: #ee88fd;
+  height: 500px;
+  border-radius: 50%;
+  width: 500px;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  animation: pulse2 3s linear infinite;
+}
+
+@keyframes pulse {
+  0% {
+    width: 350px;
+    height: 350px;
+  }
+  50% {
+    width: 375px;
+    height: 375px;
+  }
+  100% {
+    width: 350px;
+    height: 350px;
+  }
+}
+
+@keyframes pulse2 {
+  0% {
+    width: 250px;
+    height: 250px;
+  }
+  50% {
+    width: 275px;
+    height: 275px;
+  }
+  100% {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@keyframes pulse3 {
+  0% {
+    width: 500px;
+    height: 500px;
+  }
+  50% {
+    width: 525px;
+    height: 525px;
+  }
+  100% {
+    width: 500px;
+    height: 500px;
+  }
+}

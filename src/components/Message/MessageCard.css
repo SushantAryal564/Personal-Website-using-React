@@ -1,0 +1,48 @@
+.card {
+  margin: 30px 30px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.05),
+    -5px -5px 30px 7px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  transition: 0.4s;
+}
+.card:hover {
+  transform: scale(1.05, 1.05);
+  box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.05),
+    -5px -5px 30px 15px rgba(0, 0, 0, 0.05);
+}
+.card-detail {
+  padding: 20px;
+}
+
+.three h1 {
+  margin-bottom: 0.5rem;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1em;
+  padding-bottom: 10px;
+  position: relative;
+}
+.three h1:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 5px;
+  width: 55px;
+  background-color: #ffc0cb;
+}
+.three h1:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 2px;
+  height: 1px;
+  width: 95%;
+  max-width: 255px;
+  background-color: #ffc0cb;
+}
+.card-email {
+  margin-bottom: 1rem;
+}

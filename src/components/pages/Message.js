@@ -17,7 +17,9 @@ const Messages = () => {
         throw new Error("Something went wrong!");
       }
       const data = await response.json();
-      console.log(Object.values(data));
+      if (!data) {
+        throw new Error("You haven't received any Message.");
+      }
       setMessage(Object.values(data));
     } catch (error) {
       setError(error.message);
@@ -32,10 +34,14 @@ const Messages = () => {
     content = <MessageList messages={message} />;
   }
   if (isLoading) {
-    content = <p>Loading.....</p>;
+    content = <div className="spinner"></div>;
   }
   if (error) {
-    content = <p>{error}</p>;
+    content = (
+      <div className="errorContainer">
+        <p className="errorMessage">{error}</p>
+      </div>
+    );
   }
 
   return (

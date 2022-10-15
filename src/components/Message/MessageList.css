@@ -1,0 +1,15 @@
+.cardContainer {
+  padding: 0 5%;
+}
+.card-list {
+  z-index: 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px;
+}
+@media all and (max-width: 700px) {
+  .card-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

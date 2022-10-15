@@ -1,6 +1,18 @@
 import React from "react";
-
+import MessageCard from "./MessageCard";
+import "./MessageList.css";
 export const MessageList = (props) => {
-  const messageList = props.messages.map((message) => <li>{message.email}</li>);
-  return <ul>{messageList}</ul>;
+  return (
+    <div className="cardContainer">
+      <div className="card-list">
+        {props.messages.map((message) => (
+          <MessageCard
+            name={message.name}
+            email={message.email}
+            message={message.message}
+          ></MessageCard>
+        ))}
+      </div>
+    </div>
+  );
 };
